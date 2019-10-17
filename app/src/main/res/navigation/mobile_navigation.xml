@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/findJobFragment">
+
+    <fragment
+        android:id="@+id/findJobFragment"
+        android:name="com.wa82bj.findgitjobs.ui.search.FindJobFragment"
+        android:label="Find Job" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.wa82bj.findgitjobs.ui.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/favorite_fragment" />
+</navigation>
