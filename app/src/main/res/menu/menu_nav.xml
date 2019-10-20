@@ -3,12 +3,17 @@
 
     <item
         android:id="@+id/findJobFragment"
-        android:title="Find Job"
+        android:title="@string/find_job"
         android:icon="@drawable/ic_search"/>
 
     <item
         android:id="@+id/favoriteFragment"
-        android:title="Favorite"
+        android:title="@string/favorite"
         android:icon="@drawable/ic_favorite_black_24dp"/>
+
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="@string/about"
+        android:icon="@drawable/ic_info_outline_black_24dp"/>
 
 </menu>

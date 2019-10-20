@@ -16,7 +16,4 @@ interface JobsDatabase {
 
     fun getJobsLessThanAndEqualPage(): Single<List<JobsEntity>>
 
-    fun updateFavoriteJobs(fav:Int , jobs : String)
-
-    fun getFavoriteJobs(): Single<List<JobsEntity>>
 }

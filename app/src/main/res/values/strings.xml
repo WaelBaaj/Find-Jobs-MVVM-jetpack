@@ -3,4 +3,7 @@
     <string name="no_search_results">No search results found</string>
     <string name="network_connection_error">Network Connection Error</string>
     <string name="offline_error">You are offline</string>
+    <string name="find_job">Find Job</string>
+    <string name="favorite">Favorite</string>
+    <string name="about">About</string>
 </resources>

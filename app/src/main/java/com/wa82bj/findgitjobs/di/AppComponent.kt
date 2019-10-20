@@ -16,6 +16,7 @@ import javax.inject.Singleton
     MainActivityModule::class,
     DatabaseModule::class,
     BaseUrlModule::class])
+
 interface AppComponent : AndroidInjector<DaggerApplication> {
 
     fun inject(app: App)

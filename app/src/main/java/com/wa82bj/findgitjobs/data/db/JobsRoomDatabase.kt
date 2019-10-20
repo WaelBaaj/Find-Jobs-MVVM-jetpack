@@ -26,17 +26,6 @@ class JobsRoomDatabase @Inject constructor(
             }
             .toList()
 
-    override fun getFavoriteJobs(): Single<List<JobsEntity>> =
-        Flowable.just(jobsDao.getFavoriteJobs())
-            .flatMapIterable {
-                return@flatMapIterable it
-            }
-            .map {
-
-                return@map it
-            }
-            .toList()
-
     override fun saveJobsEntities(jobs: List<JobsEntity>) {
         database.runInTransaction {
             for (jobs in jobs) {
@@ -48,11 +37,5 @@ class JobsRoomDatabase @Inject constructor(
 
     override fun getAllJobs(): Flowable<List<JobsEntity>> =
         jobsDao.getAllJobs()
-
-    override fun updateFavoriteJobs(fav : Int, jobs : String) =
-        jobsDao.update(fav , jobs)
-
-
-
 
 }

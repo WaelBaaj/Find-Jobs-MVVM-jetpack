@@ -30,16 +30,4 @@ abstract interface JobsDao {
     @Query("DELETE FROM jobs_table")
     abstract fun deleteAll()
 
-    // Favorite Products
-    @Query("SELECT * FROM jobs_table where fav = 1")
-    abstract fun getFavoriteJobs(): List<JobsEntity>
-
-    @Update
-    abstract fun update(jobs: JobsEntity)
-
-    @Query("UPDATE jobs_table SET fav = :fav  WHERE id =:jobId")
-    abstract fun update( fav : Int ,jobId : String)
-
-    @Query("SELECT * FROM jobs_table  where fav = :fav and id = :JobId")
-    abstract fun isFavoriteJobs(fav : Int ,JobId : String): Single<JobsEntity>
 }
